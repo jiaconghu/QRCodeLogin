@@ -3,7 +3,7 @@
 <hr />
 <h2>项目介绍</h2>
 <ul>
-	<li>一个二维码扫码登录的demo，能够完整的实现用户扫码登录的过程，<a href="https://github.com/HeyJC/QRCodeLogin">Github地址。</a></li>
+	<li>一个二维码扫码登录的demo，能够完整的实现用户扫码登录的过程，<a href="https://github.com/HeyJC/QRCodeLogin">Github地址</a>。</li>
 	<li>项目一共包含三份源码：服务器端、网页端和移动端，分别放在根目录三个子文件夹下。</li>
 </ul>
 <h5>服务器端</h5>
@@ -19,20 +19,22 @@
 <h5>移动端</h5>
 <ul>
 	<li>基于Android系统开发，使用了一些优秀的开源依赖，包括OkHttp、ZXing等</li>
-	<li>主要用于解析二维码，用户在移动端登录账号后，扫描网页端的二维码可即在网页端进行登录。</li>
+	<li>主要用于解析二维码，用户在移动端登录账号后，扫描网页端的二维码即可在网页端进行登录。</li>
 </ul>
+<hr />
 <h2>效果展示</h2>
 <h5>网页</h5>
 <div align="center">
 <img src="https://upload-images.jianshu.io/upload_images/15955542-2d7e66b3bd66e932.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
- width="600px">
+ width="700px">
 <img src="https://upload-images.jianshu.io/upload_images/15955542-0f08978967ec2388.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
- width="600px">
+ width="700px">
  </div>
 <h5>移动端</h5>
 <div align="center">
 <img src="https://upload-images.jianshu.io/upload_images/15955542-1aa884269d0fa3aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
- width="200px" style="border: 1px solid #999999;">
+ width="250px" style="border: 1px solid #999999;">
+<p> </P>
 <img src="https://upload-images.jianshu.io/upload_images/15955542-e75cb7be9c69c911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
- width="200px" style="margin-left: 10px;border: 1px solid #999999;">
+ width="250px" style="margin-left: 10px;border: 1px solid #999999;">
  </div>
