@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Auth</string>
+    
+    <string name="result_title">扫一扫登录</string>
+    <string name="setup_title">账号设置</string>
+    <string name="scan_title">扫一扫</string>
+
+</resources>

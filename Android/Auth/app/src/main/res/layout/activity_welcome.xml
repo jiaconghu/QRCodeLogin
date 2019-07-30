@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorLight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WelcomeActivity">
+    <LinearLayout
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_gravity="center"
+                android:src="@mipmap/logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp" />
+            <TextView
+                android:id="@+id/appName"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:text="口令"
+                android:textSize="38sp"
+                android:textColor="@color/colorDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorDark"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:text="口 令 登 录 安 全 在 握"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

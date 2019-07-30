@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SetupActivity">
+    <RelativeLayout
+        android:background="@drawable/line_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/setupBackBtn"
+            android:padding="12dp"
+            android:src="@mipmap/btn_back"
+            android:contentDescription="@null"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/colorDark"
+            android:layout_centerInParent="true"
+            android:text="@string/setup_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/setupUAvatar"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_head"
+        android:layout_width="65dp"
+        android:layout_height="65dp" />
+    <TextView
+        android:id="@+id/setupUName"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="默认用户"
+        android:textSize="15sp"
+        android:textColor="@color/colorDarkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/line_both"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/setting_notify"
+            android:contentDescription="@null"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:text="系统通知"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.suke.widget.SwitchButton
+            android:id="@+id/setupNotify"
+            app:sb_checked="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:sb_checked_color="@color/colorTheme"
+            android:layout_width="58dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/line_both"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_qq"
+            android:contentDescription="@null"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:text="QQ"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.suke.widget.SwitchButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:sb_checked_color="@color/colorTheme"
+            android:layout_width="58dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/line_bot"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:padding="2dp"
+            android:src="@mipmap/ic_wechat" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:text="微信"
+            android:textColor="@color/colorText"
+            android:textSize="15sp" />
+        <com.suke.widget.SwitchButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:sb_checked_color="@color/colorTheme"
+            android:layout_width="58dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/line_bot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_linkedin"
+            android:contentDescription="@null"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorText"
+            android:text="领英"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.suke.widget.SwitchButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:sb_checked_color="@color/colorTheme"
+            android:layout_width="58dp"
+            android:layout_height="36dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/setupAccountExit"
+        android:text="退出或切换账号"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorLight"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg_btn_theme_circle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+</LinearLayout>

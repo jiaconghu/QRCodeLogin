@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    tools:context=".activity.ResultActivity">
+    <RelativeLayout
+        android:background="@drawable/line_bot"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/resultBackBtn"
+            android:padding="13dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/btn_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:text="@string/result_title"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorDark"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/resultUAvatar"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/resultUName"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="默认用户"
+        android:textSize="14sp"
+        android:textColor="@color/colorDarkText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/line_both"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="时间"
+            android:textColor="@color/colorText"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/resultTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDark"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/line_bot"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="地点"
+            android:textColor="@color/colorText"
+            android:textSize="15sp"
+            android:padding="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/resultAddress"
+            android:textColor="@color/colorDark"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultInfo"
+        android:layout_marginTop="10dp"
+        android:text="请求登录的IP地址为127.0.0.1，请确认是否本人操作"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="13sp"
+        android:textColor="@color/colorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/resultConfirmBtn"
+        android:layout_marginTop="25dp"
+        android:text="确认登录"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorLight"
+        android:background="@drawable/bg_btn_theme"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+    <Button
+        android:id="@+id/resultCancelBtn"
+        android:text="暂不登录"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/colorTheme"
+        android:background="@drawable/bg_btn_theme_pale"
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+</LinearLayout>
