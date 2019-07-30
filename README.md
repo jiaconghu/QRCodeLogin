@@ -23,7 +23,7 @@
 </ul>
 <hr />
 <h2>效果展示</h2>
-<h5>网页</h5>
+<h5>网页端</h5>
 <div align="center">
 <img src="https://upload-images.jianshu.io/upload_images/15955542-2d7e66b3bd66e932.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
  width="700px">
@@ -32,9 +32,7 @@
  </div>
 <h5>移动端</h5>
 <div align="center">
-<img src="https://upload-images.jianshu.io/upload_images/15955542-1aa884269d0fa3aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
- width="250px" style="border: 1px solid #999999;">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-1aa884269d0fa3aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="250px" style="border: 1px solid #999999;">
 <p> </P>
-<img src="https://upload-images.jianshu.io/upload_images/15955542-e75cb7be9c69c911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
- width="250px" style="margin-left: 10px;border: 1px solid #999999;">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-e75cb7be9c69c911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" width="250px" style="margin-left: 10px;border: 1px solid #999999;">
  </div>
