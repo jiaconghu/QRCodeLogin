@@ -27,14 +27,14 @@
 ---
 ## 效果展示
 #### 网页端
-> [动图请戳 >>>](https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif?imageMogr2/auto-orient/strip) 
+> [动图请戳 >>>](https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif) 
 <img src="https://github.com/HeyJC/Images/blob/master/web-loadcode.gif?raw=true" width="700" align=center />
 
 ---
-> [动图请戳 >>>](https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif?imageMogr2/auto-orient/strip) 
+> [动图请戳 >>>](https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif) 
 <img src="https://github.com/HeyJC/Images/blob/master/web-scancode.gif?raw=true" width="700" align=center />
 
 ---
 #### 移动端
-> [动图请戳 >>>](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif?imageMogr2/auto-orient/strip) 
+> [动图请戳 >>>](https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif) 
 <img src="https://github.com/HeyJC/Images/blob/master/app-scancode.gif?raw=true" width="250" align=center />
