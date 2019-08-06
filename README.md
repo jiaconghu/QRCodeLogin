@@ -10,26 +10,26 @@
 > - APP未针对Android 6.0以上的手机动态申请权限，所以安装后请前往设置手动开启。
 > - 由于服务器性能较差，访问较慢，喜欢的话可以把源码克隆到本地运行。
 ##### 服务器端
-> - 用于和网页端及移动端进行数据交互，主要功能包括生成二维码、获取登录位置等。
-> - 项目通过SpringBoot和Mybatis搭建而成，使用的是MySQL数据库。
-> - 源码文件夹中包含了**sql文件**，运行前记得修改源码**yml配置**文件中的数据库连接。
+- 用于和网页端及移动端进行数据交互，主要功能包括生成二维码、获取登录位置等。
+- 项目通过SpringBoot和Mybatis搭建而成，使用的是MySQL数据库。
+- 源码文件夹中包含了**sql文件**，运行前记得修改源码**yml配置**文件中的数据库连接。
 ##### 网页端
-> - 主要用于二维码的展示，用户可以在网页端获取二维码，以在网页端进行登录。
-> - 项目基于Vue.js进行开发，通过vue-cli脚手架搭建而成，使用了Vue Router路由。
-> - 源码中没有上传较大的**node_modules**文件夹，所以克隆到本地后记得先执行npm install或cnpm install命令进行下载。
-> - 当一切准备就绪时，记得将访问的接口地址改成自己本地服务器的**IP地址**（一般是localhost）。
+- 主要用于二维码的展示，用户可以在网页端获取二维码，以在网页端进行登录。
+- 项目基于Vue.js进行开发，通过vue-cli脚手架搭建而成，使用了Vue Router路由。
+- 源码中没有上传较大的**node_modules**文件夹，所以克隆到本地后记得先执行npm install或cnpm install命令进行下载。
+- 当一切准备就绪时，记得将访问的接口地址改成自己本地服务器的**IP地址**（一般是localhost）。
 ##### 移动端
-> - 主要用于二维码的解析，用户在移动端登录账号后，扫描网页端的二维码即可进行登录。
-> - 项目基于Android系统开发，使用了一些优秀的开源依赖，包括OkHttp、ZXing等。
-> - 兼容Android4.0以上的版本，6.0以上运行前请前往设置手动开启**权限**。
-> - 本地运行时，记得改成自己服务器的**IP地址**（不是localhost，一般是局域网IP地址，输入ipconfig命令就可看到），具体修改位置是在项目源码http包 > ApiUtil类中。
+- 主要用于二维码的解析，用户在移动端登录账号后，扫描网页端的二维码即可进行登录。
+- 项目基于Android系统开发，使用了一些优秀的开源依赖，包括OkHttp、ZXing等。
+- 兼容Android4.0以上的版本，6.0以上运行前请前往设置手动开启**权限**。
+- 本地运行时，记得改成自己服务器的**IP地址**（不是localhost，一般是局域网IP地址，输入ipconfig命令就可看到），具体修改位置是在项目源码http包 > ApiUtil类中。
 
 ---
 ## 效果展示
 ##### 网页端
-<img src="https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif" width="800px">
-<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="800px">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif" width="800px"/>
+<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="800px"/>
 
 ---
 ##### 移动端
-<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="250px">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="250px"/>
