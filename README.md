@@ -5,15 +5,10 @@
 ## 项目介绍
 - 一个二维码扫码登录的demo，能够完整的实现用户扫码登录的过程，[**源码地址**](https://github.com/HeyJC/QRCodeLogin)。
 - 项目一共包含三分源码：服务器端、网页端和移动端，分别放在根目录的三个文件夹下。
-- **项目网页端 [体验地址]([http://github.trunch.cn/](http://github.trunch.cn/)
-) 请戳，APP安装包 [文件地址]([http://github.trunch.cn/](http://github.trunch.cn/)
-) 或 [网盘地址]([http://github.trunch.cn/](http://github.trunch.cn/)
-)（密码69h3）请戳：**
-
+- **项目网页端 [体验地址](http://github.trunch.cn/) 请戳，APP安装包 [文件地址](http://res.trunch.cn/auth/auth.apk) 或 [网盘地址](https://pan.baidu.com/s/1Q76TcKfwkvH2czYfTYrqJg) 请戳：**
 > - 网页和APP默认登录账号：123456，密码：123456。
-> - APP未针对Android 6.0以上版本的手机动态申请权限，所以安装后请前往设置手动开启。
+> - APP未针对Android 6.0以上的手机动态申请权限，所以安装后请前往设置手动开启。
 > - 由于服务器性能较差，访问较慢，喜欢的话可以把源码克隆到本地运行。
-----
 ##### 服务器端
 > - 用于和网页端及移动端进行数据交互，主要功能包括生成二维码、获取登录位置等。
 > - 项目通过SpringBoot和Mybatis搭建而成，使用的是MySQL数据库。
@@ -28,11 +23,13 @@
 > - 项目基于Android系统开发，使用了一些优秀的开源依赖，包括OkHttp、ZXing等。
 > - 兼容Android4.0以上的版本，6.0以上运行前请前往设置手动开启**权限**。
 > - 本地运行时，记得改成自己服务器的**IP地址**（不是localhost，一般是局域网IP地址，输入ipconfig命令就可看到），具体修改位置是在项目源码http包 > ApiUtil类中。
+
 ---
 ## 效果展示
 ##### 网页端
-<img src="https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif?imageMogr2/auto-orient/strip" width="800px">
-<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif?imageMogr2/auto-orient/strip" width="800px">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif" width="800px">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="800px">
+
 ---
 ##### 移动端
-<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif?imageMogr2/auto-orient/strip" width="250px">
+<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="250px">
