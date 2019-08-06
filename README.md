@@ -27,9 +27,9 @@
 ---
 ## 效果展示
 #### 网页端
-<img src="https://upload-images.jianshu.io/upload_images/15955542-895dd1e14847420a.gif" width="700" align=center />
-<img src="https://upload-images.jianshu.io/upload_images/15955542-73b9422c0d2c63fd.gif" width="700" align=center />
+<img src="https://github.com/HeyJC/Images/blob/master/web-loadcode.gif?raw=true" width="700" align=center />
+<img src="https://github.com/HeyJC/Images/blob/master/web-scancode.gif?raw=true" width="700" align=center />
 
 ---
 #### 移动端
-<img src="https://upload-images.jianshu.io/upload_images/15955542-ae1898781a012dfd.gif" width="250" align=center />
+<img src="https://github.com/HeyJC/Images/blob/master/app-scancode.gif?raw=true" width="250" align=center />
