@@ -1,19 +1,24 @@
 <template>
   <!-- 扫码登录 -->
-  <div class="qrcode">
-    <img class="img" :src="imgURL" alt="登录码" v-show="state === 1||state === 3"/>
-    <div class="empty" v-show="state === 0"></div>
-    <div class="refresh" v-show="state === 3">
-      <i class="refresh_mask"></i>
-      <i class="refresh_icon" @click="getToken"></i>
-    </div>
-    <div class="result" v-show="state === 2">
-      <img class="u_avatar" :src="userAvatar" alt="用户头像"/>
-      <p class="u_name">{{userName}}</p>
-    </div>
-    <div>
-      <p class="sub_title">{{tip}}</p>
-      <p class="sub_desc">扫码登录，更易、更快、更安全</p>
+  <div class="login_box">
+    <router-link to="/input">
+      <div class="login_close"></div>
+    </router-link>
+    <div class="qrcode">
+      <img class="img" :src="imgURL" alt="登录码" v-show="state === 1||state === 3"/>
+      <div class="empty" v-show="state === 0"></div>
+      <div class="refresh" v-show="state === 3">
+        <i class="refresh_mask"></i>
+        <i class="refresh_icon" @click="getToken"></i>
+      </div>
+      <div class="result" v-show="state === 2">
+        <img class="u_avatar" :src="userAvatar" alt="用户头像"/>
+        <p class="u_name">{{userName}}</p>
+      </div>
+      <div>
+        <p class="sub_title">{{tip}}</p>
+        <p class="sub_desc">扫码登录，更易、更快、更安全</p>
+      </div>
     </div>
   </div>
 </template>
@@ -25,7 +30,7 @@ export default {
   data () {
     return {
       state: 0, // 场景：0无登录码，1有登陆码，2正在登录，3登录码过期
-      count: 10, // 登录码有效倒计时（S）
+      count: 30, // 登录码有效倒计时（S）
       tip: '正在获取登录码，请稍等', // 提示
       imgURL: '', // 登录码路径
       authToken: '', // 验证口令
@@ -47,7 +52,7 @@ export default {
       // 所有参数重置
       this.state = 0 // 场景为无二维码
       this.tip = '正在获取登录码，请稍等'
-      this.count = 10
+      this.count = 30
       clearInterval(this.timeCount)
       // 开始获取新的token
       this.$ajax({
@@ -85,7 +90,10 @@ export default {
         let auth = response.data.data
         // token状态为登录成功
         if (auth.authState === 1) {
-          alert('登录成功')
+          this.$message({
+            message: '登录成功！',
+            type: 'success'
+          })
           clearInterval(this.timeCount) // 关闭轮询，溜了
           // token状态为正在登陆，改变场景，请求扫码用户信息
         } else if (auth.authState === 2) {
@@ -123,17 +131,45 @@ export default {
 </script>
 
 <style scoped>
+  /*登录框*/
+  .login_box {
+    z-index: 99;
+    position: absolute;
+    width: 380px;
+    height: 540px;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -270px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px #999;
+  }
+
+  .login_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    background: url(../assets/img/pcinput.png) no-repeat right top;
+    background-size: 100% 100%;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    z-index: 99;
+  }
+  /*二维码*/
   .qrcode {
     position: relative;
     text-align: center;
   }
 
-  /* 二维码登录 */
+  /* 二维码获取 */
   .qrcode .img {
     display: block;
     width: 240px;
     height: 240px;
-    margin: 60px auto 25px;
+    margin: 70px auto 25px;
   }
 
   .qrcode .sub_title {
@@ -156,8 +192,8 @@ export default {
     display: block;
     width: 240px;
     height: 240px;
-    margin: 60px auto 25px;
-    background: #b9b9b9;
+    margin: 70px auto 25px;
+    background: #d7e8fc;
   }
 
   /* 二维码刷新 */
@@ -185,22 +221,20 @@ export default {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -37px;
-    margin-top: -37px;
-    height: 74px;
-    width: 74px;
+    margin-left: -48px;
+    margin-top: -48px;
+    height: 96px;
+    width: 96px;
     cursor: pointer;
     background: url(../assets/img/refresh.png) no-repeat;
   }
 
   .qrcode .refresh .refresh_icon:hover {
-    /*animation (动画) :绑定选择器, 4s完成动画 linear(匀速) infinite(循环) */
     animation: refresh 1s linear infinite;
   }
 
   @keyframes refresh {
     0% {
-      /* rotate(2D旋转) scale(放大或者缩小) translate(移动) skew(翻转) */
       transform: rotate(0deg);
     }
 
@@ -214,7 +248,7 @@ export default {
     display: block;
     width: 240px;
     height: 240px;
-    margin: 60px auto 25px;
+    margin: 70px auto 25px;
   }
 
   .qrcode .result .u_avatar {

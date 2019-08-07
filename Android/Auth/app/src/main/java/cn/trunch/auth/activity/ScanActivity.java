@@ -66,10 +66,8 @@ public class ScanActivity extends AppCompatActivity {
         scanView.setDelegate(new QRCodeView.Delegate() {
             @Override
             public void onScanQRCodeSuccess(String result) {
-                vibrate();
-
-                DialogUIUtils.showToastTop(result);
-
+                vibrate(); // 震动
+//                DialogUIUtils.showToastTop(result);
                 dialog = DialogUIUtils.showLoading(ScanActivity.this,
                         "处理中...", false, false,
                         false, true)

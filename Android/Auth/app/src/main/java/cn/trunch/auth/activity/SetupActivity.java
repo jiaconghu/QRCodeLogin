@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CircleCrop;
+import com.dou361.dialogui.DialogUIUtils;
 import com.suke.widget.SwitchButton;
 
 import cn.trunch.auth.R;
@@ -61,9 +62,9 @@ public class SetupActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(SwitchButton view, boolean isChecked) {
                 if (isChecked) {
-//                    DialogUIUtils.showToastCenter("系统通知已打开");
+                    DialogUIUtils.showToastCenter("系统通知已打开");
                 } else {
-//                    DialogUIUtils.showToastCenter("系统通知已关闭");
+                    DialogUIUtils.showToastCenter("系统通知已关闭");
                 }
             }
         });

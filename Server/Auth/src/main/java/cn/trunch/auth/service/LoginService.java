@@ -16,18 +16,18 @@ public class LoginService {
     public Message checkPassword(String userId, String userPassword) {
         User user = userDao.getUserInfo(userId);
         if (null == userPassword)
-            return new Message(200, "登录失败", new User());
+            return new Message(201, "登录失败", new User());
         if (null == user)
-            return new Message(200, "登录失败", new User());
+            return new Message(202, "登录失败", new User());
         if (!userPassword.equals(user.getUserPassword()))
-            return new Message(200, "登录失败", new User());
+            return new Message(203, "登录失败", new User());
         return new Message(200, "登录成功", user);
     }
 
     public Message getUserInfo(String userId) {
         User user = userDao.getUserInfo(userId);
         if (null == user)
-            return new Message(200, "获取失败", new User());
-        return new Message(200, "获取成功", user);
+            return new Message(201, "获取用户信息失败", new User());
+        return new Message(200, "获取用户信息成功", user);
     }
 }

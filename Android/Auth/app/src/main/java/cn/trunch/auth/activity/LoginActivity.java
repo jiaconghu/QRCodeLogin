@@ -96,7 +96,6 @@ public class LoginActivity extends AppCompatActivity {
                             editor.apply();
                             // 登录成功进行跳转
                             Intent intent = new Intent(LoginActivity.this, ScanActivity.class);
-//                            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);
                             finish();
                         } else {

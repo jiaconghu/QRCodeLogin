@@ -36,8 +36,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'jp.wasabeef:glide-transformations:4.0.1'
-    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
-    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.4'
-//    implementation 'com.kongzue.dialog_v3:dialog:3.1.0'
-    implementation 'com.dou361.dialogui:jjdxm-dialogui:1.0.3'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar' // 滑动按钮
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.4' // 系统栏
+    implementation 'com.dou361.dialogui:jjdxm-dialogui:1.0.3' // 对话框
 }

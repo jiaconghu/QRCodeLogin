@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 public class HttpUtil {
     public static String doGet(String httpurl) {
@@ -22,16 +23,16 @@ public class HttpUtil {
             // 设置连接方式：get
             connection.setRequestMethod("GET");
             // 设置连接主机服务器的超时时间：15000毫秒
-            connection.setConnectTimeout(5000);
+            connection.setConnectTimeout(15000);
             // 设置读取远程返回的数据时间：60000毫秒
-            connection.setReadTimeout(50000);
+            connection.setReadTimeout(100000);
             // 发送请求
             connection.connect();
             // 通过connection连接，获取输入流
             if (connection.getResponseCode() == 200) {
                 is = connection.getInputStream();
                 // 封装输入流is，并指定字符集
-                br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+                br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
                 // 存放数据
                 StringBuffer sbf = new StringBuffer();
                 String temp = null;
@@ -60,8 +61,6 @@ public class HttpUtil {
                     e.printStackTrace();
                 }
             }
-
-            assert connection != null;
             connection.disconnect();// 关闭远程连接
         }
 
@@ -103,7 +102,7 @@ public class HttpUtil {
 
                 is = connection.getInputStream();
                 // 对输入流对象进行包装:charset根据工作项目组的要求来设置
-                br = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+                br = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
 
                 StringBuffer sbf = new StringBuffer();
                 String temp = null;
