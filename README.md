@@ -3,9 +3,9 @@
 
 ----
 ## 项目介绍
-- 一个能够完整实现扫码登录的demo，客官喜欢请给个**Star**吧 >.< mua~，[**简书地址**](https://www.jianshu.com/p/d5a7a3081bbf)请戳。
+- 一个能够实现扫码登录的demo，喜欢的话请**Star**鼓励一下吧 >.< mua~，[**简书地址**](https://www.jianshu.com/p/d5a7a3081bbf)请戳。
 - 本项目一共包含三份源码，即**服务器端**、**网页端**和**移动端**。
-- **项目 [在线体验](http://github.trunch.cn/) 请戳，APP安装包 [本地下载](http://res.trunch.cn/auth/auth.apk) 或 [网盘下载](https://pan.baidu.com/s/1Q76TcKfwkvH2czYfTYrqJg) 请戳：**
+- **项目 [~~在线体验~~](http://github.trunch.cn/) 请戳，APP安装包 [~~本地下载~~](http://res.trunch.cn/auth/auth.apk) 或 [网盘下载](https://pan.baidu.com/s/1Q76TcKfwkvH2czYfTYrqJg) 请戳：**
 > - 网页和APP默认登录账号：123456，密码：123456。
 > - Android 6.0以上的手机使用APP时请前往设置开启权限。
 #### 服务器端
