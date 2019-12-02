@@ -3,7 +3,7 @@
 
 ----
 ## 项目介绍
-- 一个能够实现扫码登录的demo，有用不妨**Star**一下吧 >.< mua~，[**简书地址**](https://www.jianshu.com/p/d5a7a3081bbf)请戳。
+- 一个能够实现扫码登录的demo，有用不妨**Star**一下吧 >.< ~，[**简书地址**](https://www.jianshu.com/p/d5a7a3081bbf)请戳。
 - 本项目一共包含三份源码，即**服务器端**、**网页端**和**移动端**。
 - **项目 [~~在线体验~~](http://github.trunch.cn/) 请戳，APP安装包 [~~本地下载~~](http://res.trunch.cn/auth/auth.apk) 或 [网盘下载](https://pan.baidu.com/s/1Q76TcKfwkvH2czYfTYrqJg) 请戳：**
 > - 网页和APP默认登录账号：123456，密码：123456。
